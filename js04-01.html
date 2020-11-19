@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascrip 4-1</title>
+    <script>
+        //다중 반복문
+        //하나의 반복문 안에 또 다른 반복문을 사용하는 형태
+
+        //for(첫번째 초기화 변수; 첫번째 반복조건; 첫번째 카운트){
+        //     두번째 for문에서 반복 실행할 소스 코드
+        // 반복 실행할 소스코드
+        //     for(두번째 초기화 변수; 두번째 반복 조건; 두번째 카운트){
+        //          두번째 for문에서 반복 실행할 소스 코드
+        //     }
+        // }
+
+        for( var i = 0; i < 10; i++){
+            console.log("----------------------------")
+            console.log("첫번째 for문의 i값 : " + i);
+            console.log("----------------------------")
+            for( var j = 0; j < 10; j++){
+                console.log("두번째 for문의 j값 : " + j);
+            }
+        }
+
+        //문제1) 위의 예제를 참고하여 아래와 같이 출력하는 프로그램을
+        // 작성하시오.
+        //'i의 값 : x, j의 값 : y'
+        //'i의 값 : x1, j의 값 : y1'
+
+
+        console.log("****************************")
+
+        for(var i =0; i < 10; i++){
+            for(var j = 0; j <10; j++){
+                console.log("i의 값 : " + i + " j의 값 : " + j );
+            }
+        }
+
+        // 문제2) 2중 for문으로 구구단 출력
+
+        console.log("****************************")
+
+        for(var i = 2; i <= 9; i++){
+            console.log(i+"단");
+            for(var j = 1; j <= 9; j++){
+            console.log(i + " * " + j + " = " + (i * j) );
+            }
+            console.log("")
+        }
+
+        console.log("****************************")
+
+        // 문제3) while문으로 구구단
+
+        var num1 = 2;
+        var num2 = 1;
+
+        while(num1 <10){
+            while(num2 < 10){
+                console.log(num1 + " * " + num2 + " = " + (num1 * num2) )
+                num2++;
+            }
+            console.log("")
+            num2 = 1 // num2를 1로 다시 초기화(num2가 10이라 실행안됨)
+            num1++;
+        }
+
+        // // 문제3) while문으로 구구단
+
+        // var num1 = 2;
+        
+
+        // while(num1 <10){
+        //     var num2 = 1;
+        //     while(num2 < 10){
+        //         console.log(num1 + " * " + num2 + " = " + (num1 * num2) )
+        //         num2++;
+        //     }
+        //     console.log("")
+        //     // num2 = 1 // num2를 1로 다시 초기화(num2가 10이라 실행안됨)
+        //     num1++;
+        // }
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
