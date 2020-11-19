@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript 2-2</title>
+    <script>
+        var x = 32;
+        var total = 100 + x * 2 / 4 - 3;
+        var div = x / 10; 
+        var mod = x % 2;
+
+        console.log("x : " + x );
+        console.log("100 + x * 2 / 4 - 3 = " + total);
+        console.log("x / 10 = " + div);
+        console.log("x % 2 = " + mod);
+        // var y = prompt("숫자를 입력하세요");
+        // var result = y % 2;
+
+        // if(result == 0){
+        //     console.log("입력한 숫자가 짝수입니다.")
+        // }else{
+        //     console.log("입력한 숫자가 홀수입니다.")
+        // }
+
+        console.log("\n----증감 연산자----\n");
+        var a = 10;
+        console.log(a);
+        a++;//증감연산자로 값 1 증가    
+        console.log(a);
+        a--;//증감연산자로 값 1 감소
+        console.log(a);
+
+        console.log("----전위 연산----");
+        
+        var test = 10;
+        console.log(test);
+        console.log(++test);
+        console.log(test);
+        console.log(--test);
+        console.log(test);
+        
+        console.log("----후위 연산----");
+
+        var test2 = 10;
+        console.log(test2);
+        console.log(test2++);
+        console.log(test2);
+        console.log(test2--);
+        console.log(test2);
+
+        console.log("----대입 연산자----");
+
+        var x = 3;
+        var y = 3;
+        var z = 3;
+
+        console.log("x = " + x + ", y = " + y + ", z = " + z);
+
+        x += 3;
+        y *= 3;
+        z %= 2;
+
+        console.log("x += 3; 실행후, x = " + x);
+        console.log("y *= 3; 실행후, y = " + y);
+        console.log("z %= 2; 실행후, z = " + z);
+
+        console.log("----비교 연산자----");
+        
+        var x = 13;
+        var y = 7;
+
+        console.log("x = " + x + ", y = " + y);
+        console.log("x == y : " + (x == y));
+        console.log("x != y : " + (x != y));
+        console.log("x >= y : " + (x >= y));
+        console.log("x > y : " + (x > y));
+        console.log("x <= y : " + (x <= y));
+        console.log("x < y : " + (x < y));
+
+    
+    </script>
+</head>
+<body>
+    
+
+
+
+</body>
+</html>

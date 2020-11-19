@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript 3-1</title>
+    <script>
+
+
+        var fruits = "사과"
+        var price = 0;
+
+        console.log("----switch----");
+
+        switch(fruits){
+            case "바나나":
+            price = 200;
+            break;
+
+            case "사과":
+            price = 300;
+            break;
+
+            case "체리":
+            price = 400;
+            break;
+
+            default:
+            console.log("팔지않습니다");
+            price = 0;
+        }
+        console.log(price);
+        document.write(price);
+
+        console.log("----switch를 if로----");
+        
+        fruits = "사과";
+        price = 0;
+
+        if(fruits == "바나나"){
+            price = 200;
+        }
+        else if(fruits == "사과"){
+            price = 300;
+        }
+        else if(fruits == "체리")
+        {
+            price = 400;
+        }
+        else{
+            price = 0;
+            console.log("팔지 않습니다.");
+        }
+        console.log(price);
+
+        console.log("--------");
+
+        var day = new Date("2020-11-18").getDay();//getDay(요일을 0 ~ 6까지 일 ~ 토)
+        //new Date().getDay; 오늘 날짜의 요일을 0 ~ 6으로 표현해줌 (일 ~ 토)
+        var toDay = "";
+        console.log(day)
+
+
+        switch(day){
+            case 1:
+            toDay = "월요일";
+            break;
+
+            case 2:
+            toDay = "화요일";
+            break;
+
+            case 3:
+            toDay = "수요일";
+            break;
+
+            case 4:
+            toDay = "목요일";
+            break;
+
+            case 5:
+            toDay = "금요일";
+            break;
+
+            default:
+            toDay = "주말";
+            break;
+        }
+        console.log("오늘은 " + toDay +"입니다.");
+
+        console.log("----문제----");
+        //날짜를 입력받아 해당하는 요일 출력하기 (else if문)
+        //사용자 입력 방식 "2020-11-17"
+
+        var inputDay = prompt("날짜입력");
+        var day = new Date(inputDay).getDay();
+        var week = "";
+
+        if(day == 1){
+            week = "월요일";
+        }
+        else if(day == 2){
+            week = "화요일";
+        }
+        else if(day == 3){
+            week ="수요일";
+        }
+        else if(day == 4){
+            week = "목요일";
+        }
+        else if(day == 5){
+            week = "금요일";
+        }
+        else{
+            week = "주말";
+        }
+        console.log(week);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

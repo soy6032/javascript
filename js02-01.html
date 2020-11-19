@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript 2-1</title>
+    <script>
+        window.addEventListener("DOMContentLoaded",function(){
+            var oct = 015;
+            var hex = 0x15;
+            var condition = true;
+
+            document.write("8진수 015는 십진수로 " + oct + "<br>");
+            document.write("16진수 0x15는 십진수로 " + hex +"<br>");
+            document.write("condition은 " + condition + "<br>");
+            document.write("문자열 : 단일인용부호로도 표현 " + "<br>");
+            document.write("그녀는 \"누구세요\" 라고 말했습니다.");
+        });
+
+        //이스케이프 문자
+        //문자열 내에서 특정한 문자를 출력하기 위한 문자
+        // 이스케이프 문자는 '\'기호와 함께 사용함
+        // \b : 백스페이스
+        // \t : 수평탭*(4칸 띄움)
+        // \v : 수직탭
+        // \n : 개행*(enter:한줄 내려감)
+        // \r : 리턴
+        // \f : 폼 피드
+        // \' : 홀따옴표*
+        // \" : 쌍따옴표*
+        // \\ : 역슬레쉬*
+        // \0 : NULL문자
+        // \xXX : Latin -1 문자, 16진수
+        // \uXXXX : Unicode 문자, 16진수
+
+        console.log("abcdefghi\b\b\b");
+        console.log("ab\t\tcde\t\tfghi");
+        console.log("ab\ncde\nfg\nhi");
+        console.log("\"abc\"def\"gh\"");
+        console.log("\'ab\'cd\'ef\'gh");
+        console.log("'ab'cd'ef'gh'");
+        console.log("\\abc\\def\\gh\\");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

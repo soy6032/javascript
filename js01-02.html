@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.5.1.js"></script>
+    <script>
+        //script태그는 현재 head태그 내에 입력하는 것을 권장함
+
+        //1. onload를 사용한 로드 방법
+
+        //    window.onload = function() {
+        //        var btn = document.getElementById("btn1");
+        //        btn.addEventListener("click", function(){
+        //        alert("버튼을 클릭했습니다");
+        //        })  
+        //    }
+
+        //2. DOMContentLoad 를 사용한 로드방식
+
+        // window.addEventListener("DOMContentLoaded",function(){
+        //        var btn = document.getElementById("btn1");
+        //        btn.addEventListener("click", function(){
+        //        alert("버튼을 클릭했습니다");
+        //         }) 
+        //       })
+
+        // 3. 제이쿼리 ready이벤트 시작하는 방식
+
+        $(document).ready(function () {
+            $("#btn1").on("click", function () {
+                alert("제이쿼리를 이용하여 버튼을 클릭했습니다.")
+            })
+        })
+    </script>
+</head>
+
+<body>
+
+    <button id="btn1">버튼 클릭시 알림창</button>
+    <br>
+    <a href="javascript:alert('클릭하셨어요?')">클릭해보세요</a>
+
+    <script>
+        // var btn = document.getElementById("btn1");
+        // btn.addEventListener("click", function(){
+        // alert("버튼을 클릭했습니다");
+        // })
+    </script>
+</body>
+
+</html>
