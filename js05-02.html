@@ -81,12 +81,50 @@
         //실제로 데이터를 가지고 올 경우
         //각각의 게시물은 object 타입으로 저장하고, 이렇게 생성된 
 
-        var arrbbs = [];
-        arrbbs[0] = objbbs1;
-        arrbbs[1] = objbbs2;
-        arrbbs[2] = objbbs3;
+        var arrbbs = [objbbs1, objbbs2, objbbs3];
+        // arrbbs[0] = objbbs1;
+        // arrbbs[1] = objbbs2;
+        // arrbbs[2] = objbbs3;
 
-        console.log(arrbbs);
+        // console.log(arrbbs);
+
+        //출력
+
+        console.log("------------------------")
+        for(var i = 0; i < arrbbs.length; i++){
+            console.log(arrbbs[i].num);
+            console.log(arrbbs[i].title);
+            console.log(arrbbs[i].id);
+            console.log(arrbbs[i].time);
+            console.log(arrbbs[i].view);
+            console.log(arrbbs[i].like);
+        }
+
+        document.write("<table border='1'>");
+        document.write("<thead>");
+        document.write("<tr>");
+        document.write("<th>번호</th>");
+        document.write("<th>제목</th>");
+        document.write("<th>글쓴이</th>");
+        document.write("<th>등록시간</th>");
+        document.write("<th>조회수</th>");
+        document.write("<th>추천</th>");
+        document.write("</tr>");
+        document.write("</thead>");
+        document.write("<tbody>");
+
+            for(var i = 0; i < arrbbs.length; i++){
+                document.write("<tr>");
+                document.write("<td>" + arrbbs[i].num + "</td>");
+                document.write("<td>" + arrbbs[i].title + "</td>");
+                document.write("<td>" + arrbbs[i].id + "</td>");
+                document.write("<td>" + arrbbs[i].time + "</td>");
+                document.write("<td>" + arrbbs[i].view + "</td>");
+                document.write("<td>" + arrbbs[i].like + "</td>");
+                document.write("</tr>");
+            }
+        document.write("</tbody>");
+        document.write("</table>");
 
         
 
